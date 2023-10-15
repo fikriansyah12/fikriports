@@ -21,6 +21,21 @@ nav {
   padding-left: 8%;
   padding-right: 8%;
 }
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 25px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+nav ul li a:hover {
+  color: #d5d811;
+  transition: 0.4s;
+}
 
 .logo {
   color: white;
@@ -33,24 +48,6 @@ span {
   color: #c4b70c;
 }
 
-nav ul li {
-  list-style-type: none;
-  display: inline-block;
-  padding: 10px 25px;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  text-transform: capitalize;
-}
-
-nav ul li a:hover {
-  color: #d5d811;
-  transition: 0.4s;
-}
-
 .btn {
   background-color: #cecece;
   color: rgb(247, 233, 233);
@@ -61,7 +58,6 @@ nav ul li a:hover {
   border-radius: 30px;
   transition: transform 0.4s;
 }
-
 .btn:hover {
   transform: scale(1.2);
 }
@@ -96,7 +92,6 @@ h4 {
   max-width: 100%;
   position: relative;
 }
-
 .newslatter form input:first-child {
   display: inline-block;
   width: 100%;
@@ -105,7 +100,6 @@ h4 {
   outline: none;
   border-radius: 30px;
 }
-
 .newslatter form input:last-child {
   position: absolute;
   display: inline-block;
@@ -125,14 +119,34 @@ h4 {
   padding: 100px 0px;
   background-color: #191919;
 }
-
 .about img {
   height: auto;
   width: 430px;
+  border-radius: 30px;
 }
 
 .about-text {
   width: 550px;
+}
+.about-text h2 {
+  color: rgb(238, 255, 0);
+  font-size: 75px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+.about-text h5 {
+  color: white;
+  letter-spacing: 2px;
+  font-size: 22px;
+  margin-bottom: 25px;
+  text-transform: capitalize;
+}
+.about-text p {
+  color: rgba(251, 255, 0, 0.8);
+  letter-spacing: 1px;
+  line-height: 28px;
+  font-size: 18px;
+  margin-bottom: 45px;
 }
 
 .main {
@@ -142,33 +156,6 @@ h4 {
   display: flex;
   align-items: center;
   justify-content: space-around;
-}
-
-.about-text h2 {
-  color: rgb(238, 255, 0);
-  font-size: 75px;
-  text-transform: capitalize;
-  margin-bottom: 20px;
-}
-
-.about img {
-  border-radius: 30px;
-}
-
-.about-text h5 {
-  color: white;
-  letter-spacing: 2px;
-  font-size: 22px;
-  margin-bottom: 25px;
-  text-transform: capitalize;
-}
-
-.about-text p {
-  color: rgba(251, 255, 0, 0.8);
-  letter-spacing: 1px;
-  line-height: 28px;
-  font-size: 18px;
-  margin-bottom: 45px;
 }
 
 button {
@@ -181,7 +168,6 @@ button {
   border-radius: 30px;
   transition: 0.4s;
 }
-
 button:hover {
   background-color: transparent;
   border: 2px solid #52ee81;
@@ -220,13 +206,27 @@ button:hover {
   overflow: hidden;
   text-align: center;
 }
-
 .card i {
   font-size: 50px;
   display: block;
   text-align: center;
   margin: 25px 0px;
   color: #f9004d;
+}
+.card .button {
+  background-color: #bbc441;
+  color: white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 9px 22px;
+  border-radius: 30px;
+  transition: 0.4s;
+}
+.card .button:hover {
+  background-color: transparent;
+  border: 2px solid #bbbbbb;
+  cursor: pointer;
 }
 
 h5 {
@@ -242,23 +242,6 @@ h5 {
   margin-bottom: 25px;
 }
 
-.card .button {
-  background-color: #bbc441;
-  color: white;
-  text-decoration: none;
-  border: 2px solid transparent;
-  font-weight: bold;
-  padding: 9px 22px;
-  border-radius: 30px;
-  transition: 0.4s;
-}
-
-.card .button:hover {
-  background-color: transparent;
-  border: 2px solid #bbbbbb;
-  cursor: pointer;
-}
-
 .contact-me {
   width: 100%;
   height: 290px;
@@ -268,14 +251,12 @@ h5 {
   flex-direction: column;
   justify-content: center;
 }
-
 .contact-me p {
   color: white;
   font-size: 30px;
   font-weight: bold;
   margin-bottom: 25px;
 }
-
 .contact-me .button-two {
   background-color: #000000;
   color: white;
@@ -286,7 +267,6 @@ h5 {
   border-radius: 30px;
   transition: 0.4s;
 }
-
 .contact-me .button-two:hover {
   background-color: transparent;
   border: 2px solid #dbdbdb;
@@ -303,14 +283,12 @@ footer {
   align-items: center;
   justify-content: center;
 }
-
 footer p:nth-child(1) {
   font-size: 30px;
   color: white;
   margin-bottom: 20px;
   font-weight: bold;
 }
-
 footer p:nth-child(2) {
   color: white;
   font-size: 17px;
@@ -322,7 +300,6 @@ footer p:nth-child(2) {
 .social {
   display: flex;
 }
-
 .social a {
   width: 45px;
   height: 45px;
@@ -336,7 +313,6 @@ footer p:nth-child(2) {
   text-decoration: none;
   font-size: 20px;
 }
-
 .social a:hover {
   transform: scale(1.3);
   transition: 0.3s;
@@ -347,6 +323,4 @@ footer p:nth-child(2) {
   color: #f9f500;
   bottom: 35px;
   font-size: 14px;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
